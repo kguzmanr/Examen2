@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Sistema_de_Encuesta.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/Menu.css" rel="stylesheet" />
+    <title>Encuesta UPI</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h2>Encuesta UPI</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href='Inicio.aspx' data-item='Inicio'>Inicio</a></li>
+                    <li><a href='Encuesta.aspx' data-item='Encuesta'>Encuesta</a></li>
+                    <li><a href='Reportes.aspx' data-item='Reportes'>Reportes</a>
+                        <ul>
+                            <li><a href="Reportegeneral.aspx">Reporte General</a>
+                            <li><a href="Carrosi.aspx">Posee Carro</a></li>
+                            <li><a href="Carrono.aspx">No Posee Carro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <footer>
+            <div>
+                <p>Proyecto Desarrollado por Kevin Guzmán</p>
+            </div>
+        </footer>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
